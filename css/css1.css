@@ -1,7 +1,28 @@
-h1{
-  color:green;
+body{
+  background-color: #b3b3ff;
 }
 
-p {
-  font-family: monospace;
+h1, nav {
+  font-family: 'Bebas Neue',cursive;
+  font-size: : 150%;
+  text-align: center;
+  background-color: #b3b3b3
+}
+
+h2{
+  font-family: 'Bebas Neue',cursive;
+  background-color: #b3b3b3
+}
+
+p, li, summary {
+  font-family: 'Roboto', sans-serif;;
+  color: #0000ff;
+}
+
+footer {
+  background-color: #b3b3b3;
+}
+
+progress[value] {
+  background-color: #10ff10
 }
