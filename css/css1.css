@@ -1,28 +1,82 @@
 body{
-  background-color: #b3b3ff;
+  margin: 3%;
+  background-color: #ffd3ca;
 }
 
-h1, nav {
+header{
+  padding: 15px 10px;
+  background-color: #000000;
+}
+
+h1{
   font-family: 'Bebas Neue',cursive;
-  font-size: : 150%;
+  font-size: 200%;
   text-align: center;
-  background-color: #b3b3b3
+  color: #ffffff;
+}
+
+nav{
+  font-family: 'Bebas Neue',cursive;
+  font-size: 150%;
+}
+
+nav a{
+  color: #ff5733;
+}
+
+nav a:hover{
+  color: #ffffff;
+}
+
+nav a:focus{
+  color: #ffffff;
 }
 
 h2{
   font-family: 'Bebas Neue',cursive;
-  background-color: #b3b3b3
+  color: #ffffff;
+  background-color: #000000
 }
 
-p, li, summary {
+a{
+  display: inline-block;
+  color: #ff0000;
+}
+
+a:hover{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+a:focus{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+a:active{
+  border: 2px solid #ff0000;
+}
+
+p, li, summary{
   font-family: 'Roboto', sans-serif;;
-  color: #0000ff;
 }
 
-footer {
+section{
+  width: 30%;
+  display: inline-block;
+  float: left;
+  margin: 1.6%;
+}
+
+footer{
   background-color: #b3b3b3;
+  clear: both;
 }
 
-progress[value] {
-  background-color: #10ff10
+progress[value]{
+  background-color: #10ff10;
+}
+
+img{
+  width: 10%;
 }
