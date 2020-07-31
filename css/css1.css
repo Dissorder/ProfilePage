@@ -1,16 +1,24 @@
 body{
-  margin: 3%;
-  background-color: #ffd3ca;
+  margin: 2%;
+  background-color: #e6dacf;
+  background: -moz-linear-gradient(top, #1e8449 0%, #000000 75%);
+  background: -webkit-linear-gradient(#1e8449  0%, #000000 75%);
 }
 
 header{
   padding: 15px 10px;
   background-color: #000000;
+  text-align: center;
+}
+
+footer{
+  background-color: #505050;
+  clear: both;
 }
 
 h1{
   font-family: 'Bebas Neue',cursive;
-  font-size: 200%;
+  font-size: 250%;
   text-align: center;
   color: #ffffff;
 }
@@ -20,16 +28,24 @@ nav{
   font-size: 150%;
 }
 
+/*Adding a selector for the nav bar*/
 nav a{
-  color: #ff5733;
+  display: inline-block;
+  width: 20%;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
 }
 
 nav a:hover{
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 nav a:focus{
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 h2{
@@ -40,7 +56,7 @@ h2{
 
 a{
   display: inline-block;
-  color: #ff0000;
+  color: #1e8449;
 }
 
 a:hover{
@@ -61,16 +77,25 @@ p, li, summary{
   font-family: 'Roboto', sans-serif;;
 }
 
-section{
-  width: 30%;
+footer p{
+  color: #ffffff;
+}
+
+.half{
+  width: 45%;
   display: inline-block;
   float: left;
   margin: 1.6%;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(200, 200, 200, 0.3);
 }
 
-footer{
-  background-color: #b3b3b3;
+.whole{
   clear: both;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(200, 200, 200, 0.3);
 }
 
 progress[value]{
@@ -79,4 +104,13 @@ progress[value]{
 
 img{
   width: 10%;
+}
+
+/* This is an exaple of a prefix */
+header, footer{
+  background: #000000;
+  background: -moz-linear-gradient(top, #1e8449 0%, #000000 75%);
+  background: -webkit-linear-gradient(#1e8449  0%, #000000 75%);
+  background-image: url('../img/tropical2.jpg');
+  background-size: cover;
 }
