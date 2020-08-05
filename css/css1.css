@@ -1,26 +1,26 @@
 body{
-  margin: 2%;
-  background-color: #e6dacf;
-  background: -moz-linear-gradient(top, #1e8449 0%, #000000 75%);
-  background: -webkit-linear-gradient(#1e8449  0%, #000000 75%);
-  background: -o-linear-gradient(#1e8449  0%, #000000 75%);
+  margin: 0;
+  background-color: #fafac8;
+  background: -moz-linear-gradient(top, #fafac8 0%, #000000 75%);
+  background: -webkit-linear-gradient(#fafac8  0%, #000000 75%);
+  background: -o-linear-gradient(#fafac8  0%, #000000 75%);
 }
 
 header{
-  padding: 15px 10px;
+  padding: 20px 0 20px 20px;
   background-color: #000000;
-  text-align: center;
+  text-align: right;
 }
 
 footer{
-  background-color: #505050;
+  background-color: #000000;
   clear: both;
 }
 
 h1{
   font-family: 'Bebas Neue',cursive;
-  font-size: 250%;
-  text-align: center;
+  font-size: 300%;
+  text-align: left;
   color: #ffffff;
 }
 
@@ -31,11 +31,8 @@ nav{
 
 /*Adding a selector for the nav bar*/
 nav a{
-  display: inline-block;
-  width: 20%;
+  padding: 2.5%;
   text-decoration: none;
-  border: 2px solid #ffffff;
-  border-radius: 5px;
   color: #ffffff;
 }
 
@@ -49,10 +46,14 @@ nav a:focus{
   color: #000000;
 }
 
+nav a:last-child{
+  margin: 0 20px 0 0;
+}
+
 h2{
-  font-family: 'Bebas Neue',cursive;
-  color: #ffffff;
-  background-color: #000000
+  font-family: 'Encode Sans Condensed', sans-serif;
+  color: #000000;
+  margin: 15px 0 15px 15px;
 }
 
 a{
@@ -71,11 +72,22 @@ a:focus{
 }
 
 a:active{
-  border: 2px solid #ff0000;
+  color: #1e8449;
 }
 
-p, li, summary{
-  font-family: 'Roboto', sans-serif;;
+nav a:active{
+  color: #ffffff;
+  background-color: #1e8449;
+}
+
+summary{
+  font-family: 'Roboto', sans-serif;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  margin: 30px;
+  text-align: justify;
 }
 
 footer p{
@@ -83,33 +95,47 @@ footer p{
 }
 
 .half{
-  width: 45%;
+  width: 50%;
+  height: 51%
   display: inline-block;
   float: left;
-  margin: 1.6%;
-  padding: 5px;
-  border-radius: 10px;
-  background-color: rgba(200, 200, 200, 0.3);
+  background-color: #fafac8;
 }
 
-.whole{
+.about{
+  background-color: #f1c40f;
   clear: both;
-  padding: 5px;
-  border-radius: 10px;
-  background-color: rgba(200, 200, 200, 0.3);
-  margin: 20px;
 }
 
-div{
-  clear: both;
-  background-color: rgba(200, 200, 200, 0.3);
-  border-radius: 10px;
-  padding: 5px;
-  margin: 20px
+.me{
+  width: 60%;
+  display: inline-block;
+  float: left;
+  background-color: #fafac8;
 }
+
+.me-img{
+  width: 40%;
+  background-color: #fafac8;
+  display: inline-block;
+  float: right;
+  background-color: #f9e79f;
+}
+
+.me-img img{
+  display: block;
+  width: 25%;
+  margin: 0 auto;
+}
+
+.animate{
+  background-color: #c63463;
+  display: block;
+  padding: 10px;
+}
+
 .animate img{
   width: 15%;
-  margin: 10px;
   vertical-align: middle;
   -webkit-transition:-webkit-transform 1s,opacity 1s,background 1s,width 1s,height 1s,font-size 1s;
   -webkit-border-radius: 5px;
@@ -131,7 +157,7 @@ footer img{
 }
 
 /* This is an exaple of a prefix */
-header, footer{
+/*header, footer{
   background: #000000;
   background: -moz-linear-gradient(top, #1e8449 0%, #000000 75%);
   background: -webkit-linear-gradient(#1e8449  0%, #000000 75%);
@@ -139,8 +165,4 @@ header, footer{
   background-image: url('../img/tropical2.jpg');
   background-size: 110%;
   background-position: center;
-}
-
-details > p{
-  color: blue;
-}
+}*/
