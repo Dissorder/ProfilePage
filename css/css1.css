@@ -7,7 +7,7 @@ body{
 }
 
 header{
-  padding: 20px 0 20px 20px;
+  padding: 20px 0 0 0;
   background-color: #000000;
   text-align: right;
 }
@@ -18,6 +18,7 @@ footer{
 }
 
 h1{
+  margin-left: 10%;
   font-family: 'Bebas Neue',cursive;
   font-size: 300%;
   text-align: left;
@@ -31,6 +32,7 @@ nav{
 
 /*Adding a selector for the nav bar*/
 nav a{
+  display: inline-block;
   padding: 2.5%;
   text-decoration: none;
   color: #ffffff;
@@ -50,14 +52,18 @@ nav a:last-child{
   margin: 0 20px 0 0;
 }
 
+.active{
+  color: #ffffff;
+  background-color: #c625f5;
+}
+
 h2{
   font-family: 'Encode Sans Condensed', sans-serif;
   color: #000000;
-  margin: 15px 0 15px 15px;
+  margin: 15px;
 }
 
 a{
-  display: inline-block;
   color: #1e8449;
 }
 
@@ -75,11 +81,6 @@ a:active{
   color: #1e8449;
 }
 
-nav a:active{
-  color: #ffffff;
-  background-color: #1e8449;
-}
-
 summary{
   font-family: 'Roboto', sans-serif;
 }
@@ -90,8 +91,18 @@ p{
   text-align: justify;
 }
 
+footer img{
+  width: 5%;
+}
+
 footer p{
   color: #ffffff;
+}
+
+/*This piece is linked to index ----------------------------------------------*/
+
+.container{
+  display: flex;
 }
 
 .half{
@@ -103,40 +114,55 @@ footer p{
 }
 
 .about{
-  background-color: #f1c40f;
-  clear: both;
+  display: block;
+  width: 60%;
+  float: left;
+  background-image: url("../img/back.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .me{
+  display: block;
   width: 60%;
-  display: inline-block;
   float: left;
-  background-color: #fafac8;
+  background-color: #f8f9f9;
 }
 
-.me-img{
-  width: 40%;
-  background-color: #fafac8;
-  display: inline-block;
-  float: right;
-  background-color: #f9e79f;
-}
-
-.me-img img{
+.about img, .me img{
   display: block;
   width: 25%;
   margin: 0 auto;
 }
 
-.animate{
-  background-color: #c63463;
-  display: block;
+/*This part is for music -----------------------------------------------------*/
+
+.albums{
+  background-image: url("../img/back.jpg");
+  background-size: cover;
   padding: 10px;
 }
 
-.animate img{
-  width: 15%;
-  vertical-align: middle;
+.gallery{
+  width: 90%;
+  margin: auto;
+  list-style: none;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gallery li{
+  margin: 10px;
+  /*border: 2px solid #00ff00;*/
+}
+
+.gallery img{
+  width: 200px;
+  height: 200px;
+
   -webkit-transition:-webkit-transform 1s,opacity 1s,background 1s,width 1s,height 1s,font-size 1s;
   -webkit-border-radius: 5px;
   -o-transition-duration:1s,1s,1s,1s,1s,1s;
@@ -144,16 +170,12 @@ footer p{
   border-radius: 5px;
 }
 
-.animate img:hover{
-  width: 20%;
+.gallery img:hover{
+  transform: scale(1.2);
 }
 
-progress[value]{
-  background-color: #10ff10;
-}
-
-footer img{
-  width: 10%;
+.albums h2{
+  color: #ffffff;
 }
 
 /* This is an exaple of a prefix */
