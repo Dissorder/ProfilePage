@@ -1,9 +1,6 @@
 body{
   margin: 0;
-  background-color: #fafac8;
-  background: -moz-linear-gradient(top, #fafac8 0%, #000000 75%);
-  background: -webkit-linear-gradient(#fafac8  0%, #000000 75%);
-  background: -o-linear-gradient(#fafac8  0%, #000000 75%);
+  background-color: #000000;
 }
 
 header{

@@ -5,15 +5,17 @@
   <meta charset="utf-8">
   <title>Disorder</title>
   <link rel="shortcut icon" href="img/logo.png">
-  <!-- CSS files-->
+  <!-- CSS files -->
   <link rel="stylesheet" href="css/css1.css">
+  <!-- JS files -->
+  <script src="js/events.js"></script>
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@200&display=swap" rel="stylesheet">
 </head>
 
-  <body>
+  <body onload="message('LOAD')" onresize="message('RESIZE')">
     <header class="opacity texto">
       <h1>Alejandro</h1>
       <nav>
@@ -26,7 +28,7 @@
 
 <div class="container">
 
-    <section class="me">
+    <section class="me" onclick="message('CLICK')">
         <h2>ACERCA DE MÍ</h2>
         <p>Creé esta página web como un proyecto que quería desarrollar desde cero. Soy estudiante de
         la Facultad de Ingeniería de la UNAM, y uno de los campos que más llaman mi atención es el
@@ -41,6 +43,8 @@
       como se muestra en la barra de navegación. Las actualizaciones serán semanales, y los temas darán
       recomendaciones y reseñas. El repositorio de la página sera público en caso de que exista interés en
       como se fue construyendo y como evolucionó.</p>
+
+      <p id="output"><p>
     </section>
 
 </div>
